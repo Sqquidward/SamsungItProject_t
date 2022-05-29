@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.samsungitproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SamsungItProject">
+        <activity
+            android:name=".Authorization.activity_change_name"
+            android:exported="false" />
+        <activity
+            android:name=".Main.Setting"
+            android:exported="false" />
+        <activity
+            android:name=".Authorization.activity_changePassword"
+            android:exported="false" />
+        <activity
+            android:name=".StockExchange.activity_na_se"
+            android:exported="false" />
+        <activity
+            android:name=".StockMarket.activity_na_sm"
+            android:exported="false" />
+        <activity
+            android:name=".StockMarket.onaSmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".News.onaNewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".News.naNewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authorization.Register.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authorization.Login.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main.MainActivity"
+            android:exported="false">
+        </activity>
+    </application>
+
+</manifest>
